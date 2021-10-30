@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+}
+.container1{
+    background-color:rgb(202, 0, 0);
+    text-align: center;
+    position: relative;
+    padding: 10px 0 10px 0;
+}
+.container2{
+    background-color:#4D8BBC;
+    padding: 10px 0 250px 0;
+}
+
+.container3{
+    background-color:#EDAC4D;
+    padding: 10px 0 250px 0;
+}
+
+.marvel{
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #ff0000;
+
+    
+}
+.PeterParker{
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+.SpiderMan{
+    color: #EDAC4D;
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    padding-left: 20px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+.spidermanP{
+    text-indent: 30px;
+    padding-top: 80px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.spidermanimg{
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin-left: 20px;
+}
+.TonyStark{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.IronMan{
+    font-family: 'Zen Kurenaido', sans-serif;
+    color: #E4290A;
+    text-transform: uppercase;
+    padding-left: 20px;
+    letter-spacing: 6px;
+}
+.IronManimg{
+    width: 383.4px;
+    height: 289.4px;
+    float: right;
+    margin-left: 20px;
+}
+.IronManP{
+    text-indent: 30px;
+    padding-top: 80px;
+    padding-left: 20px;
+    font-size: 19px;
+}
