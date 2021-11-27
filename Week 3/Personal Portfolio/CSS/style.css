@@ -41,7 +41,7 @@
     
     height: 100vh;
     width: 100%;
-    background-image: url("/images/background.jpg");
+    background-image: url("../images/background.jpg");
     background-size: cover;
     background-position: center;
     
@@ -194,13 +194,13 @@ nav ul li a:hover{
 }
 
 .stay h2{
-  padding-left: 590px;
+  padding-left: 605px;
   padding-bottom: 50px;
   color: white;
 }
 
 .stay button{
-  margin-left: 600px;
+  margin-left: 620px;
   margin-bottom: 50px;
 }
 
@@ -243,5 +243,3 @@ nav ul li a:hover{
   
   font-size: 15px;
 }
-
-
