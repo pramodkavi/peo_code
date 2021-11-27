@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Clone - Personal Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e4a35d8932.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="title">
+            <nav >
+                <h2 class="logo">Grant <span>Thornton</span></h2>
+                
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#middlePOS">About Us</a></li>
+                    <li><a href="#relatedPOS">Related insights</a></li>
+                    <li><a href="#ContactPOS">Contact</a></li>
+                    <li><a href="#socialPOS" ><button class="btn">Subscribe</button> </a></li>
+                </ul>
+            </nav>
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="/images/banner1.jpg" style="height: 100vh;
+            width: 100%;">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="/images/banner2.jpg" style="height: 100vh;
+            width: 100%;">
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="/images/banner3.jpg" style="height: 100vh;
+            width: 100%;">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <div class="head">
+                <h4 class="row" >Find your location</h4>
+                <h1 class="row">Grant Thornton</h1>
+
+        </div>
+
+    </div>    
+
+    <div class="middlemain">
+        <a name="middlePOS"></a>
+        <div class="middle">
+
+            <img  class="img2" src="images/inside.jpg" alt="">
+
+            <div class="details">
+                <h1>About Us</h1>
+                <p>The travel, tourism and leisure industry is undergoing dramatic change: consumers are now calling the shots. It’s down to the invention of new technologies and the sharing economy, which have given customers flexibility, control and new expectations. 
+                    There’s also been a shift in the pattern of demand, as millennials become a force to be reckoned with and the emerging economies open up new markets.
+                </p>
+                <button class="ViewBtn">View More</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bottom">
+        <a name="GalPOS"></a>
+        <h1>Related insights</h1>
+        <a name="relatedPOS"></a>
+        <div class="card">
+            <img src="/images/related1.jpg" alt="Denim Jeans" style="width:100%">
+            <h4>TRAVEL, TOURISM & LEISUR</h4>
+            <h3>Aviation post Covid</h3>
+            <a href="#">Read more </a>
+            
+        </div>
+
+        <div class="card">
+            <img src="/images/related2.jpg" alt="Denim Jeans" style="width:100%">
+            <h4>TRAVEL, TOURISM & LEISUR</h4>
+            <h3>Hotels in a post-Covid world</h3>
+            <a href="#">Read more </a>
+        </div>
+        <div class="card">
+            <img src="/images/related3.jpeg" alt="Denim Jeans" style="width:100%">
+            <h4>TRAVEL, TOURISM & LEISUR</h4>
+            <h3>Global business pulse </h3>
+            <a href="#">Read more </a>
+        </div>
+
+        <div class="stay">
+            <a name="ContactPOS"></a>
+            <h2> Contact our industry professionals</h2>
+            <button class="ViewBtn">Go to Contact Form</button>
+
+        </div>
+
+        <div class="lastSeg">
+            <a  name="socialPOS"></a>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="last">© 2021 Grant Thornton International Ltd (GTIL) - All rights reserved. "Grant Thornton” refers to the brand under which the Grant Thornton member firms provide assurance, tax and advisory services to their clients and/or refers to one or more member firms, as the context requires. GTIL and the member firms are not a worldwide partnership. GTIL and each member firm is a separate legal entity. Services are delivered by the member firms. GTIL does not provide services to clients. GTIL and its member firms are not agents of, 
+                and do not obligate, one another and are not liable for one another’s acts or omissions.</p>
+        </div>
+
+    </div>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+    </script>
+        
+
+</body>
+</html>
